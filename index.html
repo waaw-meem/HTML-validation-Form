@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="primary-heading">
+                    <div class="main-heading">HTML Form - Client side form validation with HTML</div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </header>
+
+    <main>
+        <section class="main-form-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="form-heading">
+                                <h3 class="tertiary-heading">Sign-up &nbsp; Form</h3>
+                            </div>
+
+                            <form action="#" id="form-control">
+                                <div class="form-group-one">
+                                    <input type="text" min="3" max="25" placeholder="Enter your Full Name" id="fullname" name="fullname" class="fullname input-fields">
+                                    <span class="uname-err" id="uname-err"></span>
+                                </div>
+
+                                <div class="form-group-one">
+                                    <input type="email" placeholder="Enter your Email" id="email" name="uemail" class="uemail input-fields" onblur="checkEmail()">
+                                    <span class="umail-err" id="umail-err"></span>
+                                </div>
+
+                                <div class="form-group-one">
+                                    <input type="password" placeholder="Enter Password" id="pwd" name="fullname" class="fullname input-fields">
+                                    <span class="pwd-err" id="pwd-err"></span>
+                                </div>
+
+                                <div class="form-group-one" id="confirm-pwd-box">
+                                    <input type="password" placeholder="Confirm Password" id="cpwd" onblur="checkPassword()" name="fullname" class="fullname input-fields">
+                                    <span class="err-msg" id="err-msg">Please do not enter numeric values or special character</span>
+                                    <span class="pwd-match" id="pwd-match"></span>
+                                </div>
+
+                                <div class="form-group-one">
+                                <button type="submit" class="signup-btn"><span>Sign up</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./assets/js/app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>
